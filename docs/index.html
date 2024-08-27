@@ -13,6 +13,34 @@
     header{
         padding-top: 9.5rem;
         padding-bottom: 6rem;
+        height:100vh;
+    }
+    /*
+    header .background{
+        width:100vw;
+        height:100vh;
+        position:absolute;
+        top:0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        //background-color: #222222;
+        background-image: url(assets/index_3_3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        filter:brightness(0.8);
+    }
+    header .tcontent{
+        position: relative;
+        width:100%;
+        height:100%;
+        left: 0;
+        right: 0;
+        z-index: 9;
+    }*/
+    
+    header{
         background: gba(204,255,255);
         background: linear-gradient(77deg, #DDFFFF 0%, #2B8CEF 35%, #66CCFF 68%, #3399FF 90%);
         background-size: 350% 350%;
@@ -28,7 +56,7 @@
     }
 
     header .logo {
-        width:50rem;
+        width:40rem;
         max-width: 100%;
     }
     header .chat {
@@ -152,9 +180,9 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="report.html">Case Registration</a></li>
-                    <li class="nav-item"><a class="nav-link" href="javascript:void()">Feasible Guidance</a></li>
-                    <li class="nav-item"><a class="nav-link" href="javascript:void()">Solution Assistant</a></li>
-                    <li class="nav-item"><a class="nav-link" href="javascript:void()">Story Delivery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="guidance.html">Feasible Guidance</a></li>
+                    <li class="nav-item"><a class="nav-link" href="guidance.html">Solution Assistant</a></li>
+                    <li class="nav-item"><a class="nav-link" href="guidance.html">Story Delivery</a></li>
                     <li class="nav-item"><a class="nav-link" href="indexchi.html">中文</a></li>
                 </ul>
             </div>
@@ -162,7 +190,8 @@
     </nav>
     <!-- Header-->
     <header class="text-black h-100">
-        <div class="container px-4 text-center">
+        <div class="background"></div>
+        <div class="tcontent container text-center">
             <img class="logo" src="assets/logo.png" alt="Sealincloud" />
             <h1 class="fw-bolder">Help complainants find their NEXT solutions</h1>
             <a class="btn btn-lg btn-dark" href="report.html">File Case Online</a>
@@ -176,7 +205,7 @@
         </div>
     </header>
     <!-- About section-->
-    <section id="about">
+    <section id="about" style="margin-top: 2rem">
         <div class="container px-4">
             <div class="row gx-4 justify-content-center align-items-center">
                 <div class="col-lg-7">
@@ -242,17 +271,17 @@
                     <div class="col-md-6 col-lg-3 list text-center">
                         <h3 class="text-center">Feasible Guidance</h3>
                         <p>Obtain a general solution from our knowledge base through AI consultation, or receive customized guidance from professional consultants</p>
-                        <div class="text-center"><a class="btn btn-primary" href="javascript:void()">Access</a></div>
+                        <div class="text-center"><a class="btn btn-primary" href="guidance.html">Access</a></div>
                     </div>
                     <div class="col-md-6 col-lg-3 list text-center">
                         <h3 class="text-center">Solution Assistant</h3>
                         <p>Provide various tools for solving common cases, or obtain efficient, reliable, and cost-effective legal and other specialized services within doors</p>
-                        <a class="btn btn-primary" href="javascript:void()">Access</a>
+                        <a class="btn btn-primary" href="guidance.html">Access</a>
                     </div>
                     <div class="col-md-6 col-lg-3 list text-center">
                         <h3 class="text-center">Story Delivery</h3>
                         <p>Share your stories and experience on solving legal issues</p>
-                        <a class="btn btn-primary" href="javascript:void()">Access</a></div>
+                        <a class="btn btn-primary" href="guidance.html">Access</a></div>
                     </div>
                 </div>
             </div>
