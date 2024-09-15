@@ -1,0 +1,3 @@
+<?
+
+include("../guidance/index.html");
