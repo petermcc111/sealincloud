@@ -23,7 +23,8 @@
             <div class="subimg" id="sub1" style="background-image: url(assets/nbgp1.jpg)"></div>
             <div class="subimg" id="sub2" style="background-image: url(assets/nbgp2.png)"></div>
             <div id="headcontent" class="headdark">
-                <h1>Help complainants find their NEXT solutions</h1>
+                <h1><?php echo _('Gettext Multi-language website demo'); ?></h1>
+                <!--<h1>Help complainants find their NEXT solutions</h1>-->
                 <a  class="btn btn-lg btn-dark" href="registration/">File Case Online</a> <span style="margin-left:1rem;font-size:1rem">OR</span>
                 <br/>
                 <img class="chat" src="assets/chat.png" alt="Sealincloud" />

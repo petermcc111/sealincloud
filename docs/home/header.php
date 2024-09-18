@@ -14,9 +14,9 @@
                     <li class="nav-item"><a class="nav-link" href="guidance.html">Story Delivery</a></li>
                     <li class="nav-item">
                         <span class="nav-link internal">
-                           <a href="#">ENG</a>
-                            <a href="#">简中</a>
-                            <a href="#">繁中</a>
+                           <a href="setlang.php?lang=en_US">ENG</a>
+                            <a href="setlang.php?lang=zh_CN">简中</a>
+                            <a href="setlang.php?lang=zh_HK">繁中</a>
                         </span>
                     </li>
                 </ul>
