@@ -1,9 +1,11 @@
 <?
 //echo($_COOKIE["lang"]);
 
-if (!empty($_GET["lang"])){
-	setcookie("lang", $_GET["lang"]);
-	$_COOKIE["lang"] = $_GET["lang"];
+$lang = addslashes($_GET["lang"]);
+
+if (!empty($lang)){
+	setcookie("lang", $lang, NULL, NULL, NULL, NULL, true);
+	$_COOKIE["lang"] = $lang;
 }
 var_dump(empty($_COOKIE["lang"]));
 if (empty($_COOKIE["lang"])){
