@@ -1,19 +1,16 @@
 <?
-//echo($_COOKIE["lang"]);
 
-$lang = addslashes($_GET["lang"]);
-
-if (!empty($lang)){
-	setcookie("lang", $lang, NULL, NULL, NULL, NULL, true);
-	$_COOKIE["lang"] = $lang;
+if (!empty($_GET["lang"])){
+	$gotlang = addslashes($_GET["lang"]);
+	setcookie("lang", $gotlang, NULL, NULL, NULL, NULL, true);
+	$_COOKIE["lang"] = $gotlang;
 }
-var_dump(empty($_COOKIE["lang"]));
-if (empty($_COOKIE["lang"])){
-	echo("no lang");
-	//setcookie("lang", "en_US");
+
+if (!empty($_COOKIE["lang"])){
+	$gotlang = addslashes($_COOKIE["lang"]);
 }
 //echo("get cookie...");
-echo($_COOKIE["lang"]);
+//echo($_COOKIE["lang"]);
 //echo("end cookie...");
 //echo("<br/>");
 //$myfile = fopen("book.json", "r") or die("Unable to open file!");
@@ -36,7 +33,7 @@ foreach($mydict as $i){
 }
 */
 
-
+//var_dump($gotlang);
 
 function _($key){
 	//echo("<br/>");
@@ -45,11 +42,11 @@ function _($key){
 	foreach ($GLOBALS["mydict"] as $x) {
 		if ($x["key"] == $key){
 			//var_dump($i[$_COOKIE["lang"]]);
-			if (empty($_COOKIE["lang"])){
+			if (empty($GLOBALS["gotlang"])){
 				return $x["en_US"];
 			}else{
 
-				return $x[$_COOKIE["lang"]];
+				return $x[$GLOBALS["gotlang"]];
 			}
 		}
 	}
