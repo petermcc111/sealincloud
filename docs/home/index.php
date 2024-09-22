@@ -1,3 +1,7 @@
+<?
+$book = "languages/book.json";
+ include("languages/langalt.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,11 +27,11 @@
             <div class="subimg" id="sub1" style="background-image: url(assets/nbgp1.jpg)"></div>
             <div class="subimg" id="sub2" style="background-image: url(assets/nbgp2.png)"></div>
             <div id="headcontent" class="headdark">
-                <!--<h1><?php //echo _('Gettext Multi-language website demo'); ?></h1>-->
-                <h1>Help complainants find their NEXT solutions</h1>
+                <h1><?php echo _('headtitle'); ?></h1>
+                <!--<h1>Help complainants find their NEXT solutions</h1>-->
                 <a  class="btn btn-lg btn-dark" href="registration/">File Case Online</a> <span style="margin-left:1rem;font-size:1rem">OR</span>
                 <br/>
-                <img class="chat" src="assets/chat.png" alt="Sealincloud" />
+                <img class="chat" src="assets/chat.webp" alt="Sealincloud" />
                 <div class="container bi-chevron">
                     <!--<a href="#about">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#222222" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" stroke-width="15" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/></svg>
@@ -42,14 +46,14 @@
             <h2 style="text-align:center;font-size: 3em">Quickly tell us what trouble you've encountered?</h2>
         </div>
         <div class="row">
-            <div class="col-lg-6" style="text-align:center;height:45vh;min-height:5rem;border:1px black solid;display: grid; align-items: center;background-image: url('assets/index_3_1.png');background-size: cover;background-repeat: no-repeat; ">
+            <div class="col-lg-6" style="text-align:center;height:45vh;min-height:5rem;border:1px black solid;display: grid; align-items: center;background-image: url('assets/index_3_1.webp');background-size: cover;background-repeat: no-repeat; ">
                 <div style="background:rgba(255,255,255,0.5);">
                     <h3 class="text-center">Reliable complaint guidance and diagnosis</h3>
                     <p>never get lost on safeguarding rights</p>
                     <div class="text-center"><a class="btn btn-primary" href="guidance/">Access</a></div>
                 </div>
             </div>
-            <div class="col-lg-6" style="text-align:center;height:45vh;min-height:5rem;border:1px black solid;display: grid; align-items: center;background-image: url('assets/index_3_2.png');background-size: cover;background-repeat: no-repeat; ">
+            <div class="col-lg-6" style="text-align:center;height:45vh;min-height:5rem;border:1px black solid;display: grid; align-items: center;background-image: url('assets/index_3_2.webp');background-size: cover;background-repeat: no-repeat; ">
                 <div style="background:rgba(255,255,255,0.5);">
                     <h3 class="text-center">Comprehensive legal services and solutions</h3>
                     <p>making the law a powerful weapon for you</p>
@@ -57,7 +61,7 @@
                 </div>
 
             </div>
-            <div class="col-lg-6" style="text-align:center;height:45vh;min-height:5rem;border:1px black solid;display: grid; align-items: center;background-image: url('assets/index_3_3.png');background-size: cover;background-repeat: no-repeat; ">
+            <div class="col-lg-6" style="text-align:center;height:45vh;min-height:5rem;border:1px black solid;display: grid; align-items: center;background-image: url('assets/index_3_3.webp');background-size: cover;background-repeat: no-repeat; ">
                 <div style="background:rgba(255,255,255,0.5);">
                     <h3 class="text-center">Media assistance and exposure opportunities</h3>
                     <p>drawing public attention and avoiding your ordeal</p>
@@ -65,7 +69,7 @@
                 </div>
                 
             </div>
-            <div class="col-lg-6" style="text-align:center;height:45vh;min-height:5rem;border:1px black solid;display: grid; align-items: center;background-image: url('assets/index_3_1.png');background-size: cover;background-repeat: no-repeat; ">
+            <div class="col-lg-6" style="text-align:center;height:45vh;min-height:5rem;border:1px black solid;display: grid; align-items: center;background-image: url('assets/index_3_1.webp');background-size: cover;background-repeat: no-repeat; ">
                 <div style="background:rgba(255,255,255,0.5);">
                     <h3 class="text-center">Function for sharing experiences and stories</h3>
                     <p>helping those who face similar challenges to avoid pitfalls</p>
@@ -127,7 +131,7 @@
                 <div class="col-lg">
                     <div class="d-flex flex-wrap">
                         <div class="p-2 partnerlogo"><img src="./assets/partners/five_01.png"></div>
-                        <div class="p-2 partnerlogo"><img src="./assets/partners/five_04.png"></div>
+                        <div class="p-2 partnerlogo"><img src="./assets/partners/five_04.jpg"></div>
                         <div class="p-2 partnerlogo"><img src="./assets/partners/five_02.png"><img src="./assets/partners/five_03.png"></div>
                         <div class="p-2 partnerlogo"></div>
                         <div class="p-2 partnerlogo"><img src="./assets/partners/five_05.png"></div>
@@ -158,7 +162,7 @@
                     </ul>
                     <div class="join"><a class="btn btn-lg btn-primary" href="mailto:info@sealincloud.com">Join Us!</a></div>
                 </div>
-                <div class="col-md col-lg-7"><img src="assets/four.png" style="width:100%;"  /></div>
+                <div class="col-md col-lg-7"><img src="assets/four.webp" style="width:100%;"  /></div>
             </div>
         </div>
     </section>
